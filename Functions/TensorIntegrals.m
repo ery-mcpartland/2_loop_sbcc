@@ -40,23 +40,21 @@ LDot[l,p]->1/2 (-2 mc^2-2 P2+P7+P9-q2),LDot[l,q]->1/2 (-mc^2-P2+P9-q2),LDot[r,r]
 LDot[q,r]->1/2 (-mb^2-P5+P8),LDot[p,p]->mb^2,LDot[p,q]->1/2 (mb^2+q2),LDot[q,q]->q2}]
 
 
-PropagatorReplace["b",amp_]:=FullSimplify[amp /. {l . l->mc^2+P2,l . r->1/2 (-P2+P3-P4),l . p->1/2 (-2 mc^2-2 P2+P7+P9-q2),
-l . q->1/2 (-mc^2-P2+P9-q2),r . r->P4,p . r->(P11-P4)/2,q . r->1/2 (-mb^2-P10+P11),p . p->mb^2,p . q->1/2 (mb^2+q2),q . q->q2}]
+PropagatorReplace["b",amp_]:=FullSimplify[amp /. {LDot[l,l]->mc^2+P2,LDot[l,r]->1/2 (-P2+P3-P4),
+LDot[l,p]->1/2 (-2 mc^2-2 P2+P7+P9-q2),LDot[l,q]->1/2 (-mc^2-P2+P9-q2),LDot[r,r]->P4,LDot[p,r]->(P11-P4)/2,
+LDot[q,r]->1/2 (-mb^2-P10+P11),LDot[p,p]->mb^2,LDot[p,q]->1/2 (mb^2+q2),LDot[q,q]->q2}]
 
 
-PropagatorReplace["c",amp_]:=FullSimplify[amp /. {l . l->mc^2+P2,l . r->1/2 (-P2+P3-P4),l . p->1/2 (-mc^2+P1-2 P2+P7-q2),
-l . q->1/2 (P1-P2-q2),r . r->P4,p . r->1/2 (-2 P4+P5+P6-q2),q . r->1/2 (-P4+P6-q2),p . p->mb^2,p . q->1/2 (mb^2+q2),q . q->q2}]
+PropagatorReplace["c",amp_]:=FullSimplify[amp /. {LDot[l,l]->mc^2+P2,LDot[l,r]->1/2 (-P2+P3-P4),
+LDot[l,p]->1/2 (-mc^2+P1-2 P2+P7-q2),LDot[l,q]->1/2 (P1-P2-q2),LDot[r,r]->P4,LDot[p,r]->1/2 (-2 P4+P5+P6-q2),
+LDot[q,r]->1/2 (-P4+P6-q2),LDot[p,p]->mb^2,LDot[p,q]->1/2 (mb^2+q2),LDot[q,q]->q2}]
 
 
-PropagatorReplace["d",amp_]:=FullSimplify[amp /.{l . l->mc^2+P2,l . r->1/2 (-P1+P12-P6+q2),l . p->1/2 (-mc^2+P1-2 P2+P7-q2),
-l . q->1/2 (P1-P2-q2),r . r->P4,p . r->(P11-P4)/2,q . r->1/2 (-P4+P6-q2),p . p->mb^2,p . q->1/2 (mb^2+q2),q . q->q2} ]
+PropagatorReplace["d",amp_]:=FullSimplify[amp /.{LDot[l,l]->mc^2+P2,LDot[l,r]->1/2 (-P1+P12-P6+q2),
+LDot[l,p]->1/2 (-mc^2+P1-2 P2+P7-q2),LDot[l,q]->1/2 (P1-P2-q2),LDot[r,r]->P4,LDot[p,r]->(P11-P4)/2,
+LDot[q,r]->1/2 (-P4+P6-q2),LDot[p,p]->mb^2,LDot[p,q]->1/2 (mb^2+q2),LDot[q,q]->q2} ]
 
 
-PropagatorReplace["e",amp_]:=FullSimplify[amp /.{l . l->mc^2+P2,l . r->1/2 (-P2+P3-P4),l . p->1/2 (-mc^2+P1-2 P2+P7-q2),
-l . q->1/2 (P1-P2-q2),r . r->P4,p . r->1/2 (-P1+P12+P13+P2-P3-P4),q . r->1/2 (-P1+P12+P2-P3),p . p->mb^2,p . q->1/2 (mb^2+q2),q . q->q2}]
-
-
-test["a",x_]:=4 x
-
-
-test["b",x_]:=3 x
+PropagatorReplace["e",amp_]:=FullSimplify[amp /.{LDot[l,l]->mc^2+P2,LDot[l,r]->1/2 (-P2+P3-P4),
+LDot[l,p]->1/2 (-mc^2+P1-2 P2+P7-q2),LDot[l,q]->1/2 (P1-P2-q2),LDot[r,r]->P4,LDot[p,r]->1/2 (-P1+P12+P13+P2-P3-P4),
+LDot[q,r]->1/2 (-P1+P12+P2-P3),LDot[p,p]->mb^2,LDot[p,q]->1/2 (mb^2+q2),LDot[q,q]->q2}]
