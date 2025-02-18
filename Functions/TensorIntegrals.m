@@ -17,7 +17,7 @@
 
 
 (* ::Text:: *)
-(*Five functions. One for each diagram; function applies rules to convert scalar propagators in amplitude into P_i basis (takes diagram type and amplitude to reduce as arguments)*)
+(*Five functions. One for each diagram; function applies Mathematica replacement rules to convert scalar products in the numerator of the integral into P_i basis (takes diagram type and amplitude to reduce as arguments). The rules were generated in the notebook Determine_Functions.nb*)
 
 
 (* ::Section:: *)

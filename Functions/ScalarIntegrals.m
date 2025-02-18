@@ -5,7 +5,7 @@
 
 
 (* ::Text:: *)
-(*Code to convert from tensor integrals to scalar integral (via tensor reduction). After application of this function scalar integrals are written only in terms of P_i*)
+(*Code to convert from tensor integrals to scalar integral (via tensor reduction). After application of this function scalar integrals are written only in terms of functions of P_i, mb, mc and q2*)
 
 
 (* ::Section:: *)
@@ -17,7 +17,7 @@
 
 
 (* ::Text:: *)
-(*Five functions, one for each class of diagram.  Contains the Passarion-Veltman rules for each diagram family. Takes a tensor integrand with all scalar products written in terms of P_i, mc, mb and q2 and converts to a scalar integrand using Passarino-Veltman. Takes two arguments , type of diagram ("a" to "e") and tensor integral to reduce. *)
+(*Five functions, one for each class of diagram.  Contains the Passarion-Veltman rules for each diagram family. Takes a tensor integrand with all scalar products written in terms of P_i, mc, mb and q2 and converts to a scalar integrand using Passarino-Veltman. Takes two arguments , type of diagram ("a" to "e") and tensor integral to reduce. These rules were generated in the notebook Determine_Functions.nb*)
 
 
 (* ::Subsection:: *)
@@ -25,7 +25,7 @@
 
 
 (* ::Text:: *)
-(*One function, takes two arguments - diagram family and tensor integral to reduce. Applies Passarino-Veltman replacement rules performs any remaining dirac algebra and applies and equations of motion to get final result.*)
+(*One function, takes two arguments - diagram family and tensor integral to reduce. Applies Passarino-Veltman replacement rules; performs any remaining Dirac algebra and applies equations of motion to get final result.*)
 
 
 (* ::Section:: *)
