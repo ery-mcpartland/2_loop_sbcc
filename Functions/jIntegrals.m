@@ -80,5 +80,5 @@ coeff=If[powers=={0,0,0,0,0,0,0},singleTerm,Coefficient[singleTerm,(1/P1^#1 1/P2
 (*j integral form*)
 
 
-jIntegralForm[diag_,int_]:=Simplify[Total[gettingPowersFromSingleTerm[diag,#]&/@int
-/.{b_,{aa1_,aa2_,aa3_,a4_,a5_,a6_,a7_}}->b diag[aa1,aa2,aa3,a4,a5,a6,a7]]];
+jIntegralForm[diag_,int_]:=Total[gettingPowersFromSingleTerm[diag,#]&/@int
+/.{b_,{aa1_,aa2_,aa3_,a4_,a5_,a6_,a7_}}->b diag[aa1,aa2,aa3,a4,a5,a6,a7]];
